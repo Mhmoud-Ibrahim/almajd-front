@@ -40,7 +40,7 @@ const About: React.FC = () => {
             <div className="position-relative">
               <div className="bg-primary rounded-4 position-absolute w-100 h-100" style={{ top: '20px', right: '-20px', zIndex: 0, opacity: 0.1 }}></div>
               <img 
-                src="https://unsplash.com" 
+                src="" 
                 alt="الموظف المسؤول" 
                 className="img-fluid rounded-4 shadow-lg position-relative" 
                 style={{ zIndex: 1, width: '100%', height: '500px', objectFit: 'cover' }}
