@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // استيراد فريمر موشن
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
+import img from '../assets/background-removed-background-removed_edited.png'
 import { 
   GeoAltFill, ClockFill, TelephoneFill, AwardFill,
   PersonBadge, FileEarmarkText, ShieldCheck, 
@@ -40,7 +41,7 @@ const About: React.FC = () => {
             <div className="position-relative">
               <div className="bg-primary rounded-4 position-absolute w-100 h-100" style={{ top: '20px', right: '-20px', zIndex: 0, opacity: 0.1 }}></div>
               <img 
-                src="" 
+                src={img}
                 alt="الموظف المسؤول" 
                 className="img-fluid rounded-4 shadow-lg position-relative" 
                 style={{ zIndex: 1, width: '100%', height: '500px', objectFit: 'cover' }}
