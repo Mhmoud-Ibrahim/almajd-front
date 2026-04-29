@@ -1,9 +1,10 @@
 import React from "react";
 import { useFormik } from "formik";
-import axios from "axios";
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { loginSchema } from "./LoginSchema";
+import api from "../api";
 
 
 const Register: React.FC = () => {
@@ -18,7 +19,7 @@ const Register: React.FC = () => {
     },
     onSubmit: async (values) => {
       try {
-        const res = await axios.post("/auth/signin", values);
+        const res = await api.post("/auth/signin", values);
         console.log(res.data);
       } catch (err) {
         console.error(err);
