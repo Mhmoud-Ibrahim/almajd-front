@@ -26,9 +26,8 @@ const Register: React.FC = () => {
   });
 
   const handleGoogleLogin = () => {
-    // هنا يتم وضع رابط الـ API الخاص بالباك إند الذي سيوجه المستخدم لجوجل
-    // مثال: window.location.href = "http://localhost:5000/api/auth/google";
-    window.location.href = "https://almajd-tau.vercel.app/auth/google";
+ 
+    window.location.href = "https://almajd-liard.vercel.app/auth/google";
   };
 
   return (
