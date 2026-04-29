@@ -17,7 +17,7 @@ const Register: React.FC = () => {
     },
     onSubmit: async (values) => {
       try {
-        const res = await axios.post("/api/auth/register", values);
+        const res = await axios.post("/auth/signup", values);
         console.log(res.data);
       } catch (err) {
         console.error(err);
